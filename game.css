@@ -1,0 +1,87 @@
+/* Styling the container class */
+.choice-container {
+  display: flex;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  font-size: 1.8rem;
+  border: 0.1rem solid rgb(86, 165, 235, .25);
+  background-color: white;
+}
+
+/* Styling hover effects */
+.choice-container:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, .5);
+  transform: translateY(-.1rem);
+  transition: transform 150ms;
+}
+
+/* Styling the choice prefix class */
+.choice-prefix {
+  padding: 1.5rem 2.5rem; /* This means padding is 1.5rem top-bottom and 2.5rem on the sides */
+  background-color: #56a5eb;
+  color: white;
+}
+
+/* Styling the Choice text class */
+.choice-text {
+  padding: 1.5rem;
+  width: 100%;
+}
+
+/* Styling correct choice class */
+.correct {
+  background-color: #28a745;
+}
+
+/* Styling incorrect choice class */
+.incorrect {
+  background-color: #dc3545;
+}
+
+/* Styling HUDs*/
+#hud {
+  display: flex;
+  justify-content: space-between; /* will space b/w margin and around items */
+}
+
+.hud-prefix {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.hud-main-text {
+  text-align: center;
+}
+
+#progressBar {
+  width: 20rem;
+  height: 4rem;
+  border: 0.3rem solid #56a5eb;
+  margin-top: 1.5rem;
+}
+
+#progressBarFull {
+  height: 3.4rem;
+  background-color: #56a5eb;
+  width: 0%;
+}
+
+/* Styling Loader */
+#loader {
+  border: 1.6rem solid white;
+  border-radius: 50%;
+  border-top: 1.6rem solid cyan;
+  width: 12rem;
+  height: 12rem;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
