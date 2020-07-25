@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The End!</title>
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <div id="end" class="container flex-center flex-column">
+    <h1 id="finalScore"></h1>
+    <form>
+      <input type="text" name="username" id="username" placeholder="username"/>
+      <button type="submit"
+      class="btn" 
+      id="saveScoreBtn" 
+      onclick="saveHighScore(event)"
+      disabled> <!-- Initial action should be set to disable so if no username is enter, there will be no click action -->
+      Save</button> <!-- saveHighScore is a fxn to hold the player's high scores; we'll define this fxn in the end.js file -->
+    </form>
+    <a class="btn" href="game.html">Play Again</a>
+    <a class="btn" href="index.html">Go Home</a>
+  </div>
+  <script src="end.js"></script>
+</body>
+</html>
